@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <div class="overlay"></div>
+    <div class="inner">
+        <h1 class="display-3">InternShifu</h1>
+        <p class="lead"> Internships and Placements for the Engineer.</p>
+        <hr class="my-4">
+        <p class="lead">Join us to work/intern with the best start-ups and companies across the nation.</p>
+        <div class="text-center">
+          <div class="btn-group" role="group" aria-label="Basic example" *ngIf="authService.loggedIn()">
+            <a class="btn btn-info btn-lg" [routerLink]="['/register']" role="button">Register</a>
+            <a class="btn btn-secondary btn-lg" [routerLink]="['/login']" role="button">Login</a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,23 @@
+.jumbotron {
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/990817/pexels-photo-990817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+  }
+  .jumbotron > .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(71, 71, 71, 0.658);
+    z-index: 1;
+}
+
+.jumbotron > .inner {
+    position: relative;
+    z-index: 2;
+}
+
+.display-3, .lead  {
+    color: white;
+}

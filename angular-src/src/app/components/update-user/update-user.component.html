@@ -1,0 +1,54 @@
+<div class="container register-form">
+  <div class="form">
+    <div class="note">
+      <p>Please complete your profile.</p>
+    </div>
+    <form (submit)="onUpdate()">
+      <div class="form-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="text-success">About</h6>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="dob" name="dob" class="form-control" placeholder="DOB" value="" />
+            </div>
+            <div class="form-group">
+              <input type="number" [(ngModel)]="phone" name="phone" class="form-control" placeholder="Phone Number *" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="graduation" name="graduation" class="form-control" placeholder="Graduation year" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="college" name="college" class="form-control" placeholder="College/University" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="profession" name="profession" class="form-control" placeholder="Profession *" value="" />
+            </div>
+            <h6 class="text-success">Work Link</h6>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="website" name="website" class="form-control" placeholder="Website/portfolio Link" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="github" name="github"  class="form-control" placeholder="GitHub Repository" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text"[(ngModel)]="otherlinks" name="otherlinks" class="form-control" placeholder="Other Links" value="" />
+            </div>
+            <h6 class="text-success">Skills</h6>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="prolanguage" name="prolanguage" class="form-control" placeholder="Programming languages" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="framework" name="framework" class="form-control" placeholder="Frameworks" value="" />
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="otherskills" name="otherskills" class="form-control" placeholder="Other skills" value="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btnSubmit">Update</button>  
+          </div>
+      </div>
+    </form>
+  </div>
+</div>
